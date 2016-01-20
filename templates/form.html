@@ -1,0 +1,69 @@
+ <div class="container">
+     <div class="fluid-container">  
+        <form action="" method="POST" class="form-horizontal col-sm-4" role="form">
+            
+                <div class="form-group">
+                    <h2>8Up block of 4000</h2>
+                </div>
+
+                <div class="form-group">
+                   <div class="input-group">
+                       <div class="input-group-addon">Starting Number</div>
+                       <input type="text" [(ngModel)]="startingNumber" class="form-control" id="exampleInputAmount" placeholder="#">
+                   </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">&nbsp;&nbsp;Padding Limit&nbsp;&nbsp;&nbsp;</div>
+                        <input type="text" [(ngModel)]="padLimit" class="form-control" id="exampleInputAmount" placeholder="Paddinglimit">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">&nbsp;Number of Lots&nbsp;</div>
+                        <input type="text" [(ngModel)]="numberOfLots" class="form-control" id="exampleInputAmount" placeholder="Number of Lots">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prefix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <input type="text" [(ngModel)]="prefix" class="form-control" id="exampleInputAmount" placeholder="String in front of number">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postfix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                        <input type="text" [(ngModel)]="postfix" class="form-control" id="exampleInputAmount" placeholder="String at the end of number">
+                    </div>
+                </div>  
+<!--                 <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            Padding :
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" [(ngModel)]="pad" name="pad" value="true">&nbsp;
+                            Yes &nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <label>      
+                            <input type="radio" [(ngModel)]="pad" name="pad" value="false">&nbsp;
+                            No
+                        </label>
+                    </div>
+                </div>  -->            
+        
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary" (click)="submit()">Submit</button>
+                        <button class="btn btn-primary" (click)="save()">Save</button>
+                    </div>
+                </div>
+
+
+        </form>
+
+         <pre *ngIf="myNumbers" id="download-numbers" class="col-sm-8">{{myNumbers}}</pre>   
+        
+    </div> 
+</div>
